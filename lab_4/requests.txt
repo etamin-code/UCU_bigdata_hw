@@ -1,0 +1,20 @@
+# reviews for selected product_id
+curl -X 'GET'   'http://localhost:8080/reviews_for_product_id?product_id=B009KYJAJY'   -H 'accept: application/json'
+
+# reviews for selected product_id and star_rating
+curl -X 'GET'   'http://localhost:8080/reviews_for_product_id?product_id=B009KYJAJY&star_rating=3'   -H 'accept: application/json'
+
+# reviews for selected customer_id
+curl -X 'GET'   'http://localhost:8080/reviews_for_customer_id?customer_id=22019042'   -H 'accept: application/json'
+
+# N_most_reviewed_items
+curl -X 'GET'   'http://localhost:8080/N_most_reviewed_items?N=10&start=2014-08-31&end=2018-08-31'   -H 'accept: application/json'
+
+# N_most_productive_customers
+curl -X 'GET'   'http://localhost:8080/N_most_productive_customers?N=10&start=2014-08-31&end=2018-08-31'   -H 'accept: application/json'
+
+# N_haters
+curl -X 'GET'   'http://localhost:8080/N_haters?N=10&start=2014-08-31&end=2018-08-31'   -H 'accept: application/json'
+
+# N_backers
+curl -X 'GET'   'http://localhost:8080/N_backers?N=10&start=2014-08-31&end=2018-08-31'   -H 'accept: application/json'
