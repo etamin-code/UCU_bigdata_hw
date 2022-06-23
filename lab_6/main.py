@@ -23,5 +23,4 @@ while i < data.shape[0]:
     while (now() - start).seconds < 1:
         sleep(0.2)
 producer.flush()
-print("end sending")
 
