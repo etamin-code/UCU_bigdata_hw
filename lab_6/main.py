@@ -20,6 +20,7 @@ while i < data.shape[0]:
     for _, row in data[i:i+15].iterrows():
         row['created_at'] = str(now())
         producer.send('tweets', dict(row))
+    i += 15
     while (now() - start).seconds < 1:
         sleep(0.2)
 producer.flush()
