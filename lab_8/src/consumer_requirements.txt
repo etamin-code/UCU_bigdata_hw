@@ -1,0 +1,6 @@
+cassandra-driver
+fastapi
+pandas
+uvicorn
+kafka-python
+

@@ -1,0 +1,9 @@
+sudo bash scripts/run-cluster.sh;
+sudo bash scripts/run-cassandra-cluster.sh; 
+sudo bash scripts/run_producer.sh;
+sudo bash scripts/create_tables.sh;
+sudo bash scripts/run_consumer.sh ;
+sudo bash scripts/run_app.sh;
+
+sudo docker run -it --network kafka-network --rm cassandra cqlsh cassandra-node
+sudo docker exec -it app /bin/bash

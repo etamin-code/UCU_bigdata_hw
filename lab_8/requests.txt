@@ -1,0 +1,9 @@
+# to try this requests you have to go into app conteiner:
+sudo docker exec -it app /bin/bash
+
+curl -X 'GET'   'http://0.0.0.0:8080/fraud_transactions_for_user?nameOrig=C1813769162'   -H 'accept: application/json'
+
+curl -X 'GET'   'http://0.0.0.0:8080/the_biggest_transactions_of_user?nameOrig=C1813769162'   -H 'accept: application/json'
+
+curl -X 'GET'   'http://0.0.0.0:8080/total_input_for_user?nameOrig=C1813769162&start=2022-05-31&end=2022-07-30'   -H 'accept: application/json'
+
